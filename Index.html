@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Wellness Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Spa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Nuat Thai Spa & Wellness</h1>
+            <p>Your escape to relaxation and rejuvenation.</p>
+            <a href="#services" class="cta">Discover More</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container"> 
+            <div class="service">
+                <div class="image-container">
+                    <img src="images/massage.jpg" alt="Massage Therapy">
+                    <div class="description">
+                        <h3>Massage Therapy</h3>
+                        <p>Experience deep relaxation with our professional massage services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="image-container">
+                    <img src="images/aromatherapy.jpg" alt="Aromatherapy">
+                    <div class="description">
+                        <h3>Aromatherapy</h3>
+                        <p>Rebalance your mind and body with our therapeutic essential oils.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="image-container">
+                    <img src="images/facial.jpg" alt="Facial Treatments">
+                    <div class="description">
+                        <h3>Facial Treatments</h3>
+                        <p>Rejuvenate your skin with our customized facial treatments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="image-container">
+                    <img src="images/yoga.jpg" alt="Yoga Sessions">
+                    <div class="description">
+                        <h3>Yoga Sessions</h3>
+                        <p>Improve your flexibility and mental clarity with guided yoga classes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Nuat Thai Spa & Wellness, we offer a peaceful retreat where you can unwind and rejuvenate. Our expert staff is committed to providing you with the best experience possible.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="images/spa1.jpg" alt="Spa Image 1">
+                <img src="images/spa2.jpg" alt="Spa Image 2">
+                <img src="images/spa3.jpg" alt="Spa Image 3">
+                <img src="images/spa4.jpg" alt="Spa Image 3">
+                <img src="images/spa5.jpg" alt="Spa Image 3">
+                <img src="images/spa6.jpg" alt="Spa Image 3">
+                <img src="images/spa7.jpg" alt="Spa Image 3">
+                <img src="images/spa8.jpg" alt="Spa Image 3">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post" class="contact-form"> 
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="Massage Therapy">Massage Therapy</option>
+                    <option value="Aromatherapy">Aromatherapy</option>
+                    <option value="Facial Treatments">Facial Treatments</option>
+                    <option value="Yoga Sessions">Yoga Sessions</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nuat Thai Spa & Wellness. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
